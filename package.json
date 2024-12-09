@@ -1,7 +1,11 @@
 {
-  "name": "stellar-cluster",
+  "name": "artem_shar_task_manager",
   "type": "module",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=22.2.0",
+    "npm": ">=10.7.0"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -9,6 +13,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.0.3"
+    "@astrojs/svelte": "^7.0.1",
+    "@prisma/client": "^6.0.1",
+    "astro": "^5.0.3",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "prisma": "^6.0.1"
   }
 }
