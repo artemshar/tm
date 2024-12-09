@@ -1,5 +1,20 @@
 ---
+import Task from '../components/Task.svelte';
+import type { PriorityType, StatusType } from '../types/tasks';
 
+const task: {
+  title: string;
+  description: string;
+  duoDate: string;
+  priority: PriorityType;
+  status: StatusType;
+} = {
+  title: "Complete TypeScript Migration",
+  description: "Update all components to use TypeScript.",
+  duoDate: "13 of December 2024",
+  priority: "MEDIUM",
+  status: "ACTIVE",
+};
 ---
 
 <div class="container">
@@ -7,10 +22,13 @@
 		<section class="tasks-list-section">
       <ul>
         <li>
-          Task 1
-        </li>
-        <li>
-          Task 2
+          <Task 
+            title={task.title}
+            description={task.description}
+            duoDate={task.duoDate}
+            priority={task.priority}
+            status={task.status}
+          />
         </li>
       </ul>
 		</section>
@@ -19,9 +37,15 @@
 </div>
 
 <style>
+  li, ul {
+    list-style: none;
+  }
 	.container {
 		font-family: 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 		height: 100%;
+    padding: 20px 15px;
+    margin: 0 auto;
+    width: 100%;
 	}
 
 	main {
