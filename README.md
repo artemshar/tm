@@ -94,7 +94,8 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 - сделал миграцию ```npx prisma migrate dev --name init_tasks```
 - обновил Prisma клиент ```npx prisma generate``` - это необходимо делать после каждого изменения в схему данных [подробнее](https://www.prisma.io/docs/orm/prisma-client/setup-and-configuration/generating-prisma-client)
 - добавил /types/tasks для хранения типов/enums, относящихся к сущности Task, для Backend / Frontend: Status, Priority
-- 
+- добавил компонент Task.svelte 
+- добавил поддержку Tailwind CSS
 
 
 ### TO DO:

@@ -1,10 +1,3 @@
-export enum Status {
-  COMPLETED = "COMPLETED",
-  ACTIVE = "ACTIVE"
-}
+export type StatusType = "COMPLETED" | "ACTIVE";
 
-export enum Priority {
-  LOW = "LOW",
-  MEDIUM = "MEDIUM",
-  HIGH = "HIGH",
-}
+export type PriorityType = "LOW" | "MEDIUM" | "HIGH";
