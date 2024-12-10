@@ -1,8 +1,8 @@
 # Task Manager: Astro, Prisma, SQLite, OpenAI API
 
-This project is the result of a test assignment for the Full-Stack Developer position at ECOM Market, December 2024.
+Project status: active.
 
-Developed by <a href="https://artemshar.space/" target="_blanc" style="color: green">**Artem Shar**</a> (not finished)
+December 2024. Developed by <a href="https://artemshar.space/" target="_blanc" style="color: green">**Artem Shar**</a>
 
 ![UI screenshot](./docs/todo_astro_svelte.png)
 
