@@ -2,7 +2,9 @@
 
 This project is the result of a test assignment for the Full-Stack Developer position at ECOM Market, December 2024.
 
-Developed by <a href="https://artemshar.space/" target="_blanc" style="color: green">**Artem Shar**</a>
+Developed by <a href="https://artemshar.space/" target="_blanc" style="color: green">**Artem Shar**</a> (not finished)
+
+![UI screenshot](./docs/todo_astro_svelte.png)
 
 ## How to Run the Application Locally
 
@@ -123,16 +125,16 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
    - Ensure the front end uses server-side rendering (SSR) for optimal performance
    and SEO.
    - Create a simple and responsive UI where users can:
-      - View all tasks in a list format.
+      - [x] View all tasks in a list format.
       - Create a new task.
       - Update a task (change status, edit fields).
       - Delete a task.
       - Filter tasks by priority and completion status (e.g., view only high-priority
    or completed tasks).
-   - Use Tailwind CSS for styling.
+   - [x] Use Tailwind CSS for styling.
 3. Database:
-   - SQLite is used as the database to store tasks.
-   - Set up a simple Prisma schema for the task model, which includes fields like title,
+   - [x] SQLite is used as the database to store tasks.
+   - [x] Set up a simple Prisma schema for the task model, which includes fields like title,
    description, priority, due date, and completion status.
 4. Bonus (Optional):
    - Implement an OpenAI API integration where users can auto-generate a task
