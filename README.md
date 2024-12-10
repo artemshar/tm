@@ -96,6 +96,9 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 - добавил /types/tasks для хранения типов/enums, относящихся к сущности Task, для Backend / Frontend: Status, Priority
 - добавил компонент Task.svelte 
 - добавил поддержку Tailwind CSS
+- сделал стили, поигрался с UI: карточка Task, фон, цвета статусов
+- обновил все компоненты на Svelte 
+- добавил blanks server actions
 
 
 ### TO DO:

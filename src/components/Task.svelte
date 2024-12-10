@@ -2,8 +2,8 @@
   import type { StatusType, PriorityType } from "../types/tasks";
 
   export let title = "Task Title";
-  export let description = "Task Description";
-  export let duoDate = "13 of December 2024";
+  export let description = "";
+  export let duoDate = "";
   export let status: StatusType = "ACTIVE";
   export let priority: PriorityType = "MEDIUM";
 
@@ -11,7 +11,7 @@
   const renderStatus = status.toLowerCase();
 </script>
 
-<div class="p-3 rounded-lg shadow-lg bg-white min-w-[350px] m-2 relative">
+<div class="p-3 rounded-lg shadow-sm shadow-black bg-white max-w-[700px] relative w-full z-10">
   <div class="text-lg font-semibold">{title}</div>
   <div class="text-gray-700 mb-2">{description}</div>
 

@@ -8,11 +8,11 @@
     <title>Task Manager by Artem Shar</title>
   </head>
   <body>
+    <slot />
     <div
       class="as-bg fixed inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-10 pointer-events-none dark:opacity-20 transition-all duration-[2.5s] ease-in-out [&+*]:relative"
     >
     </div>
-    <slot />
   </body>
 </html>
 
@@ -22,7 +22,7 @@
     margin: 0;
     width: 100%;
     height: 100%;
-    background-color: beige;
+    background-color: #e9fbe4;
   }
   .as-bg {
     margin: 30vh auto;
