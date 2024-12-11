@@ -33,12 +33,16 @@ Note: If you want to store your data externally, you can configure the URL as fo
 DATABASE_URL="sqlite://USER:PASSWORD@HOST:PORT/DATABASE?schema=SCHEMA"
 ```
 
-### Step 3: Build and Run
+### Step 3: Build and Run / Dev mode
 
 Build and preview the application locally with the following commands:
 
 - `npm run build`
 - `npm run preview`
+
+Or run in development mode:
+
+- `npm run dev`
 
 </br>
 
@@ -63,7 +67,9 @@ Build and preview the application locally with the following commands:
 - сделал стили, поигрался с UI: карточка Task, фон, цвета статусов
 - обновил все компоненты на Svelte 
 - добавил blanks server actions
-- FAILED: короткое пояснение для разработчиков: сильнее всего запнулся на том, что не смог заставить Svelte компоненты реагировать на события и передавать...
+- ~~FAILED~~: короткое пояснение для разработчиков: сильнее всего запнулся на том, что не смог заставить Svelte компоненты реагировать на события и передавать...
+- разобрался как нужно рендерить Svelte компоненты в Astro [подробнее](https://docs.astro.build/en/reference/directives-reference/#client-directives:~:text=%3CSomeSvelteComponent%20client%3Aonly%3D%22svelte%22%20/%3E)
+
 
 ### TO DO:
 

@@ -3,6 +3,7 @@
   import Input from '../components/Input.svelte';
   import { PriorityEnum, StatusEnum, type PriorityType, type StatusType } from '../types/tasks';
   import { actions } from 'astro:actions';
+  import { formatDate } from '../utils/formatDate';
 
   let tasks: {
     title: string;
@@ -21,9 +22,9 @@
   ];
 
   // Add new task handler
-  const addTask = async (event: CustomEvent<{ title: string }>) => {
+  const addTask = async (title: string) => {
     const newTask = {
-      title: event.detail.title,
+      title: title,
       description: '...',
       duoDate: new Date().toLocaleDateString(),
       dueDate: formatDate(new Date),
@@ -41,24 +42,25 @@
 
 <div class="container">
   <main>
-    <section class="flex flex-col w-full items-stretch">
-      <!-- Input Task Component -->
-      <Input className="mb-10" onCreate={addTask} />
-
-      <!-- Task List -->
-      <ul class="w-full">
-        {#each tasks as taskItem}
-          <li>
-            <Task
-              title={taskItem.title}
-              description={taskItem.description}
-              duoDate={taskItem.duoDate}
-              priority={taskItem.priority}
-              status={taskItem.status}
-            />
-          </li>
-        {/each}
-      </ul>
+    <section class="flex flex-col w-full items-center">
+      <div class="max-w-[900px]">
+        <!-- Input Task Component -->
+        <Input className="mb-10" onCreate={addTask} />
+        <!-- Task List -->
+        <ul>
+          {#each tasks as taskItem}
+            <li class="mb-6">
+              <Task
+                title={taskItem.title}
+                description={taskItem.description}
+                duoDate={taskItem.duoDate}
+                priority={taskItem.priority}
+                status={taskItem.status}
+              />
+            </li>
+          {/each}
+        </ul>
+      </div>
     </section>
   </main>
 </div>

@@ -3,7 +3,7 @@
   let { className = "", onCreate } = $props();
   let taskTitle = $state("");
   
-  const addTask = async () => {
+  const handleButtonAdd = async (event: MouseEvent) => {    
     if (taskTitle.trim()) {
       onCreate(taskTitle)
     }
@@ -23,7 +23,7 @@
 
   <!-- Add Button -->
   <button
-    onclick={addTask}
+    onclick={handleButtonAdd}
     class="px-4 py-2 bg-teal-400 text-white font-semibold rounded-lg hover:bg-teal-500 active:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-300"
   >
     Add
